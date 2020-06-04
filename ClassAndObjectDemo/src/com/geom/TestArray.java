@@ -6,9 +6,10 @@ import java.util.Random;
 // statement tightly coupled , loosely coupled 
 public class TestArray {
 
+	
 	public static void main(String[] args) {
 		
-		Rectangle  [] rectangle = new Rectangle[5];
+		Rectangle  [] rectangle = new Rectangle[10];
 		
 		for(int i=0; i<rectangle.length  ;i++)
 		{
