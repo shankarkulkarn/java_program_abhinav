@@ -4,10 +4,19 @@ import java.util.Random;
 
 public class TestArrayObject {
 
-	public static int findBiggestRectangle(Rectangle[] rectangle) {
-
-		// fill the code 
-		return 0;
+	public static int findBiggestRectangle(Rectangle[] rectangle) 
+	{
+		int big = rectangle[0].area();
+		 for(int i=1; i<rectangle.length;i++)
+		 {
+			   int area = rectangle[i].area();
+			   if ( area > big )
+			   {
+				  big = area; 
+			   }
+		 }
+		
+		  return big;
 	}
 
 	public static void main(String[] args) {
