@@ -2,7 +2,7 @@ package com.demo;
 
 public class Data<E> {
 
-	private  E  element ;
+	 private  E  element ;
 
 	public E getElement() {
 		return element;
