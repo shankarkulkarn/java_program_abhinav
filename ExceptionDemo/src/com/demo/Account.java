@@ -19,11 +19,11 @@ public class Account {
 
 
 
-	public void withdraw(int amount)
+	public void withdraw(int amount) throws BalanceException
 	{
 		 if( amount > balance )
 		 {
-			 throw new IllegalArgumentException("Insufficient Balance ");
+			 throw new BalanceException("Insufficient Balance ");
 		 }
 		  balance -= amount ;
 		 
